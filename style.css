@@ -1,0 +1,53 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+nav {
+    padding: 18px 0;
+}
+
+nav ul {
+    display: none;
+}
+
+nav .btn {
+    display: none;
+}
+
+/* @media screen and (max-width: 576px) {
+    
+} */
+
+.mob-btn {
+    display: block;
+}
+
+.brand-logo {
+    font-size: 24px;
+}
+
+@media screen and (min-width: 577px) {
+    header nav {
+        padding: 24px 0;
+    }
+    
+    .brand-logo {
+        font-size: 40px;
+    }
+
+    .mob-btn {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+}
+
+
+@media screen and (min-width: 993px) {
+    nav .btn {
+        display: block;
+    }
+}
