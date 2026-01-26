@@ -1,99 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechWave - Podcast Website</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body class="bg-[#1A0B2E] text-base">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-[#1A0B2E] text-base">
     <header class="border-b border-[#412567]">
-        <nav class="flex items-center justify-between text-white py-[18px] container mx-auto px-[20px]">
-            <div class="brand-logo text-[20px] lg:text-[30px]">
-                <a href="#" class="font-black">Tech<span class="bg-linear-to-t from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span></a>
-            </div>
-            <ul class="lg:gap-[32px] hidden lg:flex">
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Episodes</a>
-                </li>
-                <li>
-                    <a href="#">Host</a>
-                </li>
-            </ul>
-            <button class="hidden lg:block btn rounded-full py-[12px] px-[20px] font-semibold bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
-        
-            <button class="mob-btn text-[18px] block lg:hidden">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
+      <nav
+        class="flex items-center justify-between text-white py-[18px] container mx-auto px-[20px]"
+      >
+        <div class="brand-logo text-[20px] lg:text-[30px]">
+          <a href="#" class="font-black"
+            >Tech<span
+              class="bg-linear-to-t from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"
+              >Wave</span
+            ></a
+          >
+        </div>
+        <ul class="lg:gap-[32px] hidden lg:flex">
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Episodes</a>
+          </li>
+          <li>
+            <a href="#">Host</a>
+          </li>
+        </ul>
+        <button
+          class="hidden lg:block btn rounded-full py-[12px] px-[20px] font-semibold bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]"
+        >
+          Subscribe <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <button class="mob-btn text-[18px] block lg:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
     </header>
     <main class="flex flex-col gap-[50px]">
-        <section id="hero">
-            <div class="mx-auto flex flex-col items-center justify-center container mx-auto px-[20px] py-[40px]">
-                 <div class="relative size-[190px] flex items-center justify-center">
-                    <img class="absolute z-0" src="./assets/hero-circle.png" alt="">
-                    <img class="h-[70px] z-1" src="./assets/microphone.png" alt="">
-                    <span class="absolute bg-[#00FF88] text-[16px] py-[8px] px-[16px] rounded-full top-0 right-0 font-semibold text-[#1A0B2E]">New</span>
-                </div>
-                <div class="text-center text-white">
-                    <h1 class="font-black text-[40px]">TechWave</h1>
-                    <p class="text-[16px]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
-                    <div class="flex gap-2 justify-center py-5">
-                        <button class="btn rounded-full py-[12px] px-[20px] font-semibold bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] cursor-pointer hover:bg-clip-text hover:text-transparent transition-all border border-[#9100F8] flex items-center justify-center gap-2">
-                            <img src="./assets/spotify-outline.png" alt=""> Listen on Spotify
-                        </button>
-                        <button class="btn rounded-full py-[12px] px-[20px] font-semibold border border-[#00FF88] text-[#00FF88] hover:text-[#1A0B2E] hover:bg-[#00FF88] cursor-pointer transition-all box-border flex items-center justify-center gap-2 group">
-                            <img src="./assets/message.png" class="group-hover:grayscale group-hover:brightness-0" alt=""> Subscribe
-                        </button>
-                    </div>
-                </div>
+      <!-- hero section -->
+      <section
+        id="hero"
+        class="bg-position-[center_top_20%] md:bg-position-[center_top_5%] lg:bg-center"
+      >
+        <div
+          class="mx-auto flex flex-col items-center justify-center container mx-auto px-[20px] py-[40px] lg:py-[100px]"
+        >
+          <div
+            class="relative size-[190px] lg:size-[350px] flex items-center justify-center mb-[24px] lg:mb-[40px]"
+          >
+            <img class="absolute z-0" src="./assets/hero-circle.png" alt="" />
+            <img
+              class="h-[70px] lg:h-[175px] w-auto z-1 hover:animate-spin"
+              src="./assets/microphone.png"
+              alt=""
+            />
+            <span
+              class="absolute bg-[#00FF88] text-[16px] py-[8px] px-[16px] rounded-full top-0 right-0 lg:right-[25px] font-semibold text-[#1A0B2E]"
+              >New</span
+            >
+          </div>
+          <div class="text-center text-white">
+            <h1 class="font-black text-[40px] lg:text-[60px] mb-[8px]">
+              TechWave
+            </h1>
+            <p class="text-[16px]">
+              Your daily dose of tech insights, productivity hacks, and personal
+              growth
+            </p>
+            <div class="flex gap-2 justify-center mt-[24px]">
+              <button
+                class="btn rounded-full py-[12px] px-[20px] font-semibold bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] cursor-pointer hover:bg-clip-text hover:text-transparent transition-all border border-[#9100F8] flex items-center justify-center gap-2"
+              >
+                <img src="./assets/spotify-outline.png" alt="" /> Listen on
+                Spotify
+              </button>
+              <button
+                class="btn rounded-full py-[12px] px-[20px] font-semibold border border-[#00FF88] text-[#00FF88] hover:text-[#1A0B2E] hover:bg-[#00FF88] cursor-pointer transition-all box-border flex items-center justify-center gap-2 group"
+              >
+                <img
+                  src="./assets/message.png"
+                  class="group-hover:grayscale group-hover:brightness-0"
+                  alt=""
+                />
+                Subscribe
+              </button>
             </div>
-           
-        </section>
-        <section id="about">
-            <div class="mx-auto flex flex-col items-center justify-center container mx-auto px-[20px] py-[40px]">
-                <div class="text-white text-center">
-                    <h2 class="text-[32px] font-bold mb-[16px]">About the Podcast</h2>
-                    <p class="text-[16px]">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.
-                    <br>   
-                    Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
-                </div>
-                <hr>
-                <div class="text-center grid grid-cols-2 lg:grid-cols-4">
-                    <div>
-                        <h3 class="text-[40px] text-[#00FF88] font-black mb-[16px]">150K+</h3>
-                        <p class="text-[16px] uppercase text-white">Monthly Listeners</p>
-                    </div>
-                    <div>
-                        <h3 class="text-[40px] text-[#00FF88] font-black mb-[16px]">200+</h3>
-                        <p class="text-[16px] uppercase text-white">Episodes Published</p>
-                    </div>
-                    <div>
-                        <h3 class="text-[40px] text-[#00FF88] font-black mb-[16px]">4.9&#9733;</h3>
-                        <p class="text-[16px] uppercase text-white">Average Rating</p>
-                    </div>
-                    <div>
-                        <h3 class="text-[40px] text-[#00FF88] font-black mb-[16px]">50+</h3>
-                        <p class="text-[16px] uppercase text-white">Industry Experts</p>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <!-- about section -->
+      <section id="about">
+        <div
+          class="mx-auto flex flex-col items-center justify-center container mx-auto px-[20px] py-[40px] lg:py-[120px]"
+        >
+          <div class="text-white text-center max-w-[1000px]">
+            <h2 class="text-[32px] lg:text-[48px] font-bold mb-[16px] lg:mb-[40px]">
+              About the Podcast
+            </h2>
+            <p class="text-[16px]">
+              TechWave is your go-to podcast for staying ahead in the fast-paced
+              world of technology.
+            </p>
+            <p class="text-[16px]">
+              We break down complex topics into digestible insights, explore
+              productivity strategies that actually work, and share stories of
+              personal growth from industry leaders.
+            </p>
+            <br />
+            <br />
+            <p class="text-[16px]">
+              Join thousands of young professionals and tech enthusiasts who
+              start their day with TechWave.
+            </p>
+          </div>
+          <hr class="border border-white/10 w-full my-[40px] lg:my-[80px]" />
+          <div
+            class="text-center grid grid-cols-2 lg:grid-cols-4 gap-[40px] lg:gap-[80px]"
+          >
+            <div>
+              <h3
+                class="text-[40px] lg:text-[48px] text-[#00FF88] font-black mb-[16px]"
+              >
+                150K+
+              </h3>
+              <p class="text-[16px] uppercase text-white">Monthly Listeners</p>
             </div>
-        </section>
-    </main>
-    <footer>
+            <div>
+              <h3
+                class="text-[40px] lg:text-[48px] text-[#00FF88] font-black mb-[16px]"
+              >
+                200+
+              </h3>
+              <p class="text-[16px] uppercase text-white">Episodes Published</p>
+            </div>
+            <div>
+              <h3
+                class="text-[40px] lg:text-[48px] text-[#00FF88] font-black mb-[16px]"
+              >
+                4.9&#9733;
+              </h3>
+              <p class="text-[16px] uppercase text-white">Average Rating</p>
+            </div>
+            <div>
+              <h3
+                class="text-[40px] lg:text-[48px] text-[#00FF88] font-black mb-[16px]"
+              >
+                50+
+              </h3>
+              <p class="text-[16px] uppercase text-white">Industry Experts</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    </footer>
-</body>
+      <!-- why choose section -->
+      <section id="why-choose" class="bg-[#230E3D]">
+        <div
+          class="mx-auto flex flex-col items-center justify-center container mx-auto px-[20px] py-[40px] lg:py-[120px]"
+        >
+          <div class="text-white text-center max-w-[1000px]">
+            <h2 class="text-[32px] lg:text-[48px] font-bold mb-[16px] lg:mb-[40px]">
+              Why Choose TechWave
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 text-white gap-[30px]">
+            <div class="flex gap-[16px] flex-col bg-[#351165]/40 p-[24px] lg:p-[40px] rounded-[24px] lg:rounded-[40px] lg:row-span-2 justify-center">
+              <img src="./assets/headphone.png" alt="headphone" class="size-[50px]"/>
+              <h4 class="text-[22px] lg:text-[24px] font-bold">Premium Audio Quality</h4>
+              <p class="text-[16px] text-white/60">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+            </div>
+             <div class="flex gap-[16px] flex-col bg-[#351165]/40 p-[24px] lg:p-[40px] rounded-[24px] lg:rounded-[40px] lg:col-span-2">
+              <img src="./assets/device.png" alt="" class="h-[50px] w-[40px]"/>
+              <h4 class="text-[22px] lg:text-[24px] font-bold">Mobile Friendly</h4>
+              <p class="text-[16px] text-white/60">Listen on the go with seamless mobile experience and offline downloads.</p>
+            </div>
+             <div class="flex gap-[16px] flex-col bg-[#351165]/40 p-[24px] lg:p-[40px] rounded-[24px] lg:rounded-[40px] lg:col-span-2">
+              <img src="./assets/location.png" alt="" class="size-[50px]"/>
+              <h4 class="text-[22px] lg:text-[24px] font-bold">Global Community</h4>
+              <p class="text-[16px] text-white/60">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+            </div>
+             <div class="flex gap-[16px] flex-col bg-[#351165]/40 p-[24px] lg:p-[40px] rounded-[24px] lg:rounded-[40px] lg:col-span-2">
+              <img src="./assets/thunder.png" alt="" class="size-[50px]"/>
+              <h4 class="text-[22px] lg:text-[24px] font-bold">Exclusive Interviews</h4>
+              <p class="text-[16px] text-white/60">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+            </div>
+             <div class="flex gap-[16px] flex-col bg-[#351165]/40 p-[24px] lg:p-[40px] rounded-[24px] lg:rounded-[40px]">
+              <img src="./assets/resource.png" alt="" class="size-[50px]"/>
+              <h4 class="text-[22px] lg:text-[24px] font-bold">Rich Resources</h4>
+              <p class="text-[16px] text-white/60">Access show notes, transcripts, and additional learning materials for every episode.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
